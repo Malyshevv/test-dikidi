@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    container_name: php-dikidi
+    ports:
+      - "8080:80"
+    environment:
+      - COMPOSER_ALLOW_SUPERUSER=1
+      - COMPOSER_ALLOW_PLUGINS=1
+    volumes:
+      - ./../:/var/www/html
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-dikidi
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: dikidi
+      MYSQL_DATABASE: dikidi
+      MYSQL_USER: user
+      MYSQL_PASSWORD: dikidi
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: dikidi
+    depends_on:
+      - mysql

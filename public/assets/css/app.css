@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: white !important;
+}
+
+body {
+    background-color: #585e6a !important;
+}
+
+.mt5 {
+    margin-top:5px;
+}
+.mt10 {
+    margin-top:10px;
+}
+.mt15 {
+    margin-top:10px;
+}
+.mt20 {
+    margin-top:10px;
+}
+.mt25 {
+    margin-top:10px;
+}
+.mt30 {
+    margin-top:30px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 20rem auto;
+    background-color: #e3ebed;
+    padding: 20px;
+    border-radius: 20px;
+    border: 10px solid #363a45;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.dont-remember-me {
+    margin-top: 15px;
+}
+
+.text-secondary {
+    color: gray;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.login-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 29px;
+    margin-right: 5px;
+    padding: 0 !important;
+    height: 27px !important;
+    width: 100px !important;
+    background-color: #85a319;
+}
