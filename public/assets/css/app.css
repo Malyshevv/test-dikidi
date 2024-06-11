@@ -18,7 +18,7 @@ h1 {
 
 body {
     background-color: #585e6a !important;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .mt5 {
@@ -48,6 +48,10 @@ body {
     border-radius: 20px;
     border: 10px solid #363a45;
     box-shadow: 0 0 10px 0 black;
+}
+
+.login-container input[type="password"] {
+    padding-right: 120px;
 }
 
 .dont-remember-me {
