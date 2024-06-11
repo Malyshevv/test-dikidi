@@ -77,6 +77,6 @@ body {
 
 @media screen and (max-height: 499px) {
     .login-container {
-        margin-top: 20px; /* Small margin for very small screens */
+        margin-top: 20px;
     }
 }
