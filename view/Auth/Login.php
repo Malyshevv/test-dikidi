@@ -5,7 +5,7 @@
             <li class="breadcrumb-item active" aria-current="page"><?= $title ?></li>
         </ol>
     </nav>
-    <div class="login-container">
+    <div class="container login-container">
         <h2>Авторизация</h2>
         <p class="text-secondary">Пожалуйста авторизуйтесь</p>
         <form>
